@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>CORRELATIONS DISCOVERED BETWEEN HEALTH RISKS,AGE AND INCOME</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Obesity:</h2>
+          <p>
+            - As it relates to poverty, we can see there is a slightly positive correlation between states' obesity rates and the percentange of the states' population living in poverty.
+            - Age and Obesity do not appear to have a meaningful correlation at the state level.
+            - One of the stronger correlations in the entire set, Obesity and Median Household Income have a clearly visible negative correlation. In better terms, obesity rates are lower in states with a higher Median Household Income.</p> 
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Smoking:</h2>
+          <p>
+            - Another one of our stronger correlations, Smoking and Poverty have a slightly visible positive correlation.
+            - When it comes to Smoking and Age, it appears that most states fall within a ten year age range for their median smoker's age. Only 4 of the datapoints in the entire dataset fall outside of ages 32 to 42.
+            - Similar to Obesity and Median Household Income, we see a strong negative correlation between the percentange of smokers and the Median Household Income.</p>
+        </div>
+      </div>
+      <div class="col-xs-6  col-md-4">
+        <div class="article">
+          <h2>Healthcare:</h2>
+          <p>
+            - Similar to Obesity and Smoking, we see a strong positive correlation between the percentange of residents lacking healthcare and the percentange of residents in poverty.
+            - Again, the Age group seems to show no reasonable correlation, and most datapoints fall between 32 and 42.
+            - The weakest of the three groups, Median Household Income and percentange of residents lacking healthcare still show a visible negative correlation.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  <!-- Footer-->
+  <div id="footer">
+    <h4>Data Source:</h4>
+    <p>All data for the visualization above sourced from: https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml</p>
+    <br>
+    <p>Lopokoiyit 2022</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
